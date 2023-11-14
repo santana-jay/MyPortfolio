@@ -13,7 +13,7 @@ const NotFound = () => {
                 className="w-[20%] sm:w-[20%] md:w-[20%] lg:w-[20%]"
             />
             <p className="text-[25px] lowercase sm:text-[30px] md:text-[35px] lg:text-[40px]">
-        Oh no! there's nothing here.
+        Oh no! there&apos; nothing here.
             </p>
             <div>
                 <Link
