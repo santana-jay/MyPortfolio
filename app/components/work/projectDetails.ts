@@ -50,7 +50,7 @@ export const projects = [
         techLinks: ["https://www.typescriptlang.org/", "https://reactjs.org/", "https://nextjs.org/", "https://tailwindcss.com/", "https://planetscale.com/", "https://zod.dev/", "https://platform.openai.com/docs/api-reference", "https://js.langchain.com/"],
         github: "https://github.com/santana-jay/smart-journal.git",
         demo: "https://smart-journal-git-main-jay-santanas-projects.vercel.app/",
-        image: "/MoodJournalScreenshot.png",
+        image: "/MoodJournalScreenShot.png",
         available: true,
     },
     {
