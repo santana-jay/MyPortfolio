@@ -4,12 +4,13 @@ import Image from "next/image";
 interface LogoProps {
   width?: number;
   height?: number;
+  color?: string;
 }
 
-const Logo: React.FC<LogoProps> = ({ width = 100, height = 100 }) => {
+const Logo: React.FC<LogoProps> = ({ width = 100, height = 100, color='current-color' }) => {
     return (
         <Image
-            className={`w-${width} h-${height}`}
+            className={`w-${width} h-${height} text=${color}`}
             src="/logo.svg"
             alt="Logo"
             width={width}

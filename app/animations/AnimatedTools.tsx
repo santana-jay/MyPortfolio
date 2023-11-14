@@ -21,7 +21,7 @@ const AnimatedTools: React.FC<AnimatedToolsProps> = ({
         <div className={className}>
             {children.map((child, index) => (
                 <Animated key={index} delay={delay + index * stepSize}>
-                    {cloneElement(child, { size: iconSize })}
+                    {cloneElement(child, { size: iconSize, title: child.props.name })}
                 </Animated>
             ))}
         </div>

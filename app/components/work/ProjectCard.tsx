@@ -20,6 +20,7 @@ const ProjectCard = ({
     image,
     available,
 }: ProjectProps) => {
+    console.log('ghub', github, 'demo', demo, 'links', techLinks);
     return (
         <motion.div
             className={`relative bg-cover bg-no-repeat bg-center z-10 h-[550px] w-full items-stretch justify-center py-0 sm:h-[700px] sm:w-[100%] md:h-[650px] md:w-[100%] lg:h-[500px]`}
@@ -55,10 +56,10 @@ const ProjectCard = ({
                     {available ? (
                         <>
                             <Link
-                                href={github}
+                                href={github ?? ''}
                                 target="_blank"
                                 aria-label="Open GitHub Repository"
-                                className="rounded-full w-[20px] bg-white p-5 text-[20px] md:w-[25px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
+                                className="rounded-full w-[20px] bg-blue-400 p-5 text-[20px] md:w-[25px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
                                 data-blobity
                                 data-blobity-radius="35"
                                 data-blobity-offset-x="4"
@@ -67,10 +68,10 @@ const ProjectCard = ({
                                 <SiGithub/>
                             </Link>
                             <Link
-                                href={demo}
+                                href={demo ?? ''}
                                 target="_blank"
                                 aria-label="Open Live Demo"
-                                className=" w-[20px] rounded-full bg-white p-5 text-[20px] md:w-[25px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
+                                className=" w-[20px] rounded-full bg-green-300 p-5 text-[20px] md:w-[25px] md:text-[24px] lg:w-[65px] lg:text-[28px]"
                                 data-blobity
                                 data-blobity-radius="35"
                                 data-blobity-offset-x="4"
@@ -82,6 +83,23 @@ const ProjectCard = ({
                     ) : (
                         <div></div>
                     )}
+                    <div className="grid grid-cols-5 gap-5 mt-9 mb-9">
+                        {technologies.map((IconComponent, id) => (
+                            <div key={id} className={"relative"}>
+                                <Link
+                                    href={techLinks[id] ?? ''}
+                                    target="_blank"
+                                    aria-label={`Learn more about ${techNames[id]}`}
+                                    className="w-[20px] text-[20px] md:w-[25px] md:text-[24px] lg:w-[30px] lg:text-[28px]"
+                                    title={techLinks[id]}
+                                    data-blobity-tooltip={techNames[id]}
+                                    data-blobity-magnetic="false"
+                                >
+                                    <IconComponent color='white'/>
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
                 </div>
                 <div
                     className={`absolute text-white  ${
@@ -104,11 +122,11 @@ const ProjectCard = ({
                             "mt-4 w-[90%] max-w-[457px] text-[16px] font-semibold text-[#95979D] "
                         }
                     />
-                    <div className="mt-9 mb-9 grid grid-cols-5 gap-5">
+                    {/* <div className="grid grid-cols-5 gap-5 mt-9 mb-9">
                         {technologies.map((IconComponent, id) => (
                             <div key={id} className={"relative"}>
                                 <Link
-                                    href={techLinks[id]}
+                                    href={techLinks[id] ?? ''}
                                     target="_blank"
                                     aria-label={`Learn more about ${techNames[id]}`}
                                     className="w-[20px] text-[20px] md:w-[25px] md:text-[24px] lg:w-[30px] lg:text-[28px]"
@@ -120,7 +138,7 @@ const ProjectCard = ({
                                 </Link>
                             </div>
                         ))}
-                    </div>
+                    </div> */}
                 </div>
             </Container>
         </motion.div>
