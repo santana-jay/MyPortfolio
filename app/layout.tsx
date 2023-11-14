@@ -11,7 +11,7 @@ const syne = Syne({
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://linkedin.com/in/santana-jay"),
-    title: "Seek Visual Artist",
+    title: "Jay Santana - Software Engineer",
     description:
     "Passionate Designer and Software Engineer, currently at pursuing a degree in Computer Science. Focused on immersive experiences.",
     generator: "Next.js",

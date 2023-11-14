@@ -1,14 +1,4 @@
-# Portfolio v5 ![dev](https://github.com/nuIIpointerexception/www.seekvisualartist.com/actions/workflows/dev.yml/badge.svg) ![master](https://github.com/nuIIpointerexception/www.seekvisualartist.com/actions/workflows/master.yml/badge.svg)
-
-This is the fifth iteration of my portfolio website. It is built with Next.js, React and Tailwind CSS.
-
-My goal was to try out a simplistic glass-morphism-like design and learn more about React and Next.js.
-
-Check it out [here](https://www.seekvisualartist.com/)
-
----
-
-## Showcase
+# Showcase
 
 <div>
     <img src='./.github/assets/1.png' width='1819' alt="home section">
@@ -29,22 +19,18 @@ Check it out [here](https://www.seekvisualartist.com/)
 
 ## Building
 
-1. Clone the repository
+1. Install dependencies
 
     ```bash
-    git clone https://github.com/nuIIpointerexception/www.seekvisualartist.com/
+    bun install or npm install
+    ```
+    bun install next@13.4.12 or npm install next@13.4.12
     ```
 
-2. Install dependencies
+2. Run the development server
 
     ```bash
-    bun install
-    ```
-
-3. Run the development server
-
-    ```bash
-    bun run dev
+    bun run dev or npm run dev
     ```
 
 ---
@@ -57,13 +43,13 @@ Personally I'd recommend [Vercel](https://vercel.com/) or [Netlify](https://www.
 1. Build the app
 
     ```bash
-    bun run build
+    bun run build or npm run build
     ```
 
 2. Start the production server
 
     ```bash
-    bun run start
+    bun run start or npm run start
     ```
 
 ---
