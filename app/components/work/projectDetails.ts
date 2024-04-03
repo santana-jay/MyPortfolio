@@ -55,7 +55,7 @@ export const projects = [
     },
     {
         id: 1,
-        name: "MyDealership",
+        name: "RevveD",
         description:
             "This dynamic application is designed to help dealerships manage their inventory, service appointments, and customer information. The application is built with Python, Django, and React. I also used PostgreSQL for the database. I am currently working on adding more features to this application.",
         technologies: [SiPython, SiDjango, SiReact, SiHtml5, SiCss3, SiPostgresql, SiGit],
@@ -63,7 +63,7 @@ export const projects = [
         techLinks: ["https://python.org/", "https://www.djangoproject.com/", "https://reactjs.org/", "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5", "https://developer.mozilla.org/en-US/docs/Web/CSS", "https://www.postgresql.org/", "https://git-scm.com/"],
         github: "https://gitlab.com/santana.jazel/My-Dealership-App/",
         demo: "NA",
-        image: "/MyDealership.png",
+        image: "/RevveD.png",
         available: true,
     },
     {
